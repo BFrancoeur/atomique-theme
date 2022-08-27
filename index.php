@@ -16,42 +16,88 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+        <section class="hero container">
+            <div class="inner">
+                <h1 class="hero-msg">Unique Sales Prop</h1>
+                <h3 class="supporting-usp-msg">Supporting Message</h3>
+                <button class="btn cta-btn">CTA Button</button>
+            </div>
+        </section>
 
-		<?php
-		if ( have_posts() ) :
+        <section class="logo-bar container">
+            <div class="inner">
+                <span class="client-logo">Client Logo</span>
+                <span class="client-logo">Client Logo</span>
+                <span class="client-logo">Client Logo</span>
+                <span class="client-logo">Client Logo</span>
+                <span class="client-logo">Client Logo</span>
+                <span class="client-logo">Client Logo</span>
+            </div>
+        </section>
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+        <section class="main-services container">
+            <div class="inner">
+                <div class="card-svc">
+                    <div class="icon">Service Icon</div>
+                    <div class="icon">Service Icon</div>
+                    <div class="icon">Service Icon</div>
+                    <div class="icon">Service Icon</div>
+                </div>
+            </div>
+        </section>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+        <section class="testimonials container">
+            <div class="inner">
+            <h2 class="section-heading">Testimonials</h2>
+                <div class="card-testimonial">
+                    <img src="" alt="" class="t-headshot">
+                    <div class="testimonial-info"><span class="test-name">First Name Last Name</span><span class="job-title">Job Title</span></div>
+                    <div class="testimonial-text">Testimonial text content</div>
+                </div>
+                <div class="card-testimonial">
+                    <img src="" alt="" class="t-headshot">
+                    <div class="testimonial-info"><span class="test-name">First Name Last Name</span><span class="job-title">Job Title</span></div>
+                    <div class="testimonial-text">Testimonial text content</div>
+                </div>
+                <div class="card-testimonial">
+                    <img src="" alt="" class="t-headshot">
+                    <div class="testimonial-info"><span class="test-name">First Name Last Name</span><span class="job-title">Job Title</span></div>
+                    <div class="testimonial-text">Testimonial text content</div>
+                </div>
+            </div>
+        </section>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+        <section class="who-we-serve container">
+            <div class="inner">
+                <h2 class="section-heading">Who We Serve</h2>
+                <p class="who-we-serve body-text">
+                    Who we serve body text. 
+                </p>
+            </div>
+        </section>
 
-			endwhile;
+        <section class="mission-stmt container">
+            <div class="inner">
+                <h2 class="section-heading">Mission Statement</h2>
+                <p class="mission-stmt body-text">Mission statement body text</p>
+            </div>
+        </section>
 
-			the_posts_navigation();
+        <section class="google-reviews container">
+            <div class="inner">
+                <h2 class="google-reviews section-heading">Google Reviews</h2>
+                <!-- Embed Google Reviews widget here -->
+            </div>
+        </section>
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
+        <section class="call-to-action form container">
+            <div class="inner">
+                <h3 class="cta-message"></h3>
+                <button class="btn cta-btn">Get Started</button>
+            </div>
+        </section>
+		
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
