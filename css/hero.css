@@ -1,0 +1,51 @@
+/**
+ * Hero Section Styles
+ *
+ */
+
+ .hero {
+    display: flex;
+    position: relative;
+    background-image: url('https://atomique.local/wp-content/uploads/2022/08/hd-wallpaper-1867616_1920.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index: 10;
+ }
+
+ .inner.home-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 6rem;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 20;
+ }
+
+ .hero-msg {
+    font-size: var(--h1-size);
+    line-height: var(--line-height-headings);
+    color: var(--theme-white);
+    flex: 1 0 100%;
+    color: var(--theme-white);
+ }
+
+ .supporting-usp-msg {
+    font-size: var(--h3-size);
+    font-weight: var(-font-weight-medium);
+    line-height: var(--line-height-body);
+    flex: 1 0 100%;
+    color: var(--theme-light-neutral);
+ }
+
+.btn.btn-hero-cta {
+    flex: 1 0 100%;
+    background-color: var(--theme-light-accent);
+    border: var(--theme-light-accent-border);
+}

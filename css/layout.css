@@ -1,0 +1,17 @@
+/** 
+ * Layout Styles
+ *
+ */
+.site-main {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 6rem;
+}
+
+.inner {
+    width: 95%;
+    margin: 0 auto;
+}
