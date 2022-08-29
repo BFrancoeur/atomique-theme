@@ -14,7 +14,7 @@
     z-index: 10;
  }
 
- .inner.home-hero {
+ .inner.hero-overlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,15 +28,22 @@
     z-index: 20;
  }
 
+ .hero-content {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    z-index: 90;
+ }
+
  .hero-msg {
     font-size: var(--h1-size);
     line-height: var(--line-height-headings);
     color: var(--theme-white);
     flex: 1 0 100%;
-    color: var(--theme-white);
  }
 
- .supporting-usp-msg {
+ .supporting-cta-msg {
     font-size: var(--h3-size);
     font-weight: var(-font-weight-medium);
     line-height: var(--line-height-body);
@@ -44,8 +51,19 @@
     color: var(--theme-light-neutral);
  }
 
-.btn.btn-hero-cta {
-    flex: 1 0 100%;
-    background-color: var(--theme-light-accent);
-    border: var(--theme-light-accent-border);
+ .btn-wrap-2 {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+ }
+
+.btn.btn-primary-cta {
+    flex: 1 0 50%;
+}
+
+.btn.btn-secondary-cta {
+    flex: 1 0 50%;
 }

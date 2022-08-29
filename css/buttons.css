@@ -4,7 +4,7 @@
  */
 
  .btn {
-    width: 100%;
+    flex: 1;
     max-width: 16rem;
     font-size: var(--button-font-size);
     font-weight: var(--font-weight-bold);
@@ -12,8 +12,30 @@
     padding: 1rem 1.5rem;
     border: 1px solid #000000;
     border-radius: 5px;
+    transition: all .2s;
  }
 
- .btn-cta {
+ .btn-primary-cta {
+    color: var(--theme-primary-color);
+    background-color: var(--theme-light-accent);
+    border: var(--theme-light-accent-border);
+    margin-right: .5rem;
+ }
 
+ .btn-primary-cta:hover {
+     color: var(--theme-white);
+     background-color: var(--theme-dark-accent);
+     border: var(--theme-dark-accent-border);
+ }
+
+ .btn-secondary-cta {
+    color: var(--theme-white);
+    background-color: transparent;
+    border: 1px solid var(--theme-white);
+ }
+
+ .btn-secondary-cta:hover {
+     color: var(--theme-dark-accent);
+     background-color: var(--theme-white);
+     border: 1px solid var(--theme-dark-accent);
  }

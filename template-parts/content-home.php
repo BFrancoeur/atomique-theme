@@ -2,15 +2,19 @@
 
     <?php // get_template_part('template-parts/content', 'hero'); 
     ?>
+
     <section class="container hero">
-        <div class="inner home-hero">
+        <div class="inner hero-overlay">
             <div class="hero-content">
-                <h1 class="hero-msg">Unique Sales Prop</h1>
-                <p class="supporting-usp-msg">Supporting Message</p>
-                <button class="btn btn-hero-cta">CTA Button</button>
+                <h1 class="hero-msg">Unique Sales Proposition</h1>
+                <p class="supporting-cta-msg">Supporting CTA message</p>
+                <div class="btn-wrap-2">
+                    <button class="btn btn-primary-cta">Get Started</button>
+                    <button class="btn btn-secondary-cta">Learn More</button>
+                </div>
             </div>
         </div>
-    </section>
+    </section><!-- .container.hero -->
 
     <?php // get_template_part('template-parts/content', 'logo-bar'); 
     ?>

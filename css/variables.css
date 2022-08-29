@@ -2,61 +2,69 @@
  * Global Style Variables
  *
  */
-
+html {
+    font-size: 10px;
+}
  
  :root {
     /* Typography 
     ---------------------------------------*/
-    font-size: 10px;
-    --primary-headings-font: "Ubuntu", sans-serif; /* h1, h2, h3, h4 */
-    --secondary-headings-font: "";
-    --body-font: "Libre Franklin", sans-serif;
-    --h1-size: 8rem;
-    --h2-size: 4.8rem;
-    --h3-size: 3.2rem;
-    --h4-size: 2.4rem;
-    --h5-size: 1.8rem;
-    --h6-size: 1.25rem;
-    --button-font-size: 1.5rem;
-    --line-height-headings: 1.4rem;
-    --line-height-text: 1.8rem;
-    --font-weight-light: 300;
-    --font-weight-normal: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-xtra-bold: 800;
-    --font-weight-black: 900;
-    --font-style-normal: normal;
-    --font-style-italic: italic;
+    --primary-headings-font:         "Ubuntu", sans-serif; /* h1, h2, h3, h4 */
+    --secondary-headings-font:       "Libre Franklin", sans-serif;
+    --body-font:                     "Libre Franklin", sans-serif;
+    --base-font-size:                10px;
+    --h1-size:                       8rem;
+    --h2-size:                       4.8rem;
+    --h3-size:                       3.2rem;
+    --h4-size:                       2.4rem;
+    --h5-size:                       1.8rem;
+    --h6-size:                       1.25rem;
+    --button-font-size:              1.5rem;
+    --line-height-headings:          1.4rem;
+    --line-height-text:              1.8rem;
+    --font-weight-light:             300;
+    --font-weight-normal:            400;
+    --font-weight-medium:            500;
+    --font-weight-semibold:          600;
+    --font-weight-bold:              700;
+    --font-weight-xtra-bold:         800;
+    --font-weight-black:             900;
+    --font-style-normal:             normal;
+    --font-style-italic:             italic;
 
     /* Color
     ----------------------------------------*/
-    --theme-primary-color: #2A2D34;
-    --theme-secondary-color: #7A93AC;
-    --theme-light-accent: #5FADDA;
-    --theme-light-accent-border: 1px solid #468EB8;
-    --theme-medium-accent: #FA9F42;
-    --theme-dark-accent: #1F353B;
-    --theme-light-neutral: #EBF2FF;
-    --theme-dark-neutral: #060708;
-    --theme-white: #ffffff;
-    --theme-black: #000000;
+    --theme-primary-color:           #2A2D34;
+    --theme-secondary-color:         #7A93AC;
+    --theme-light-accent:            #5FADDA;
+    --theme-light-accent-border:     1px solid #468EB8;
+    --theme-medium-accent:           #FA9F42;
+    --theme-dark-accent:             #1F353B;
+    --theme-light-neutral:           #EBF2FF;
+    --theme-dark-neutral:            #060708;
+    --theme-white:                   #ffffff;
+    --theme-black:                   #000000;
 
     /* Layout
     ----------------------------------------*/
-    --padding-thin: .5rem;
-    --padding-1: 1rem;
-    --padding-1_5: 1.5rem;
-    --padding-2: 2rem;
-    --padding-3: 3rem;
-    --padding-4: 4rem;
-    --padding-5: 5rem;
-    --padding-6: 6rem;
-    --padding-7: 7rem;
-    --padding-8: 8rem;
-    --padding-9: 9rem;
-    --padding-10: 10rem;
-    --padding-11: 11rem;
-    --padding-12: 12rem;
+    --padding-thin:                  0.5rem;
+    --padding-1:                     1rem;
+    --padding-1_5:                   1.5rem;
+    --padding-2:                     2rem;
+    --padding-3:                     3rem;
+    --padding-4:                     4rem;
+    --padding-5:                     5rem;
+    --padding-6:                     6rem;
+    --padding-7:                     7rem;
+    --padding-8:                     8rem;
+    --padding-9:                     9rem;
+    --padding-10:                    10rem;
+    --padding-11:                    11rem;
+    --padding-12:                    12rem;
+
+    /* Navigation
+    ----------------------------------------*/
+   --nav-font-size: 1.5rem;
+
+
  }

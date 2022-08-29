@@ -151,6 +151,7 @@ function atomique_scripts()
 	wp_enqueue_style('typography-style', get_template_directory_uri() . '/css/typography.css', array(), false);
 	wp_enqueue_style('buttons-style', get_template_directory_uri() . '/css/buttons.css', array(), false);
 	wp_enqueue_style('forms-style', get_template_directory_uri() . '/css/forms.css', array(), false);
+	wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css', array(), false);
 	wp_enqueue_style('hero-style', get_template_directory_uri() . '/css/hero.css', array(), false);
 	wp_style_add_data('atomique-style', 'rtl', 'replace');
 

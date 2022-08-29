@@ -1,0 +1,47 @@
+/** 
+ * Site Header Styles
+ * 
+ */
+ .site-header {
+    width: 100%;
+    max-width: 90vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--padding-1);
+    margin: 0 auto;
+ }
+
+.site-branding {
+    flex: 1 0 50%;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+ .custom-logo-link {
+    max-width: 10rem;
+ }
+
+ .main-navigation {
+    flex: 1 0 50%;
+    height: auto;
+ }
+
+ .menu {
+    
+ }
+
+ .menu ul {
+    display: flex;
+    text-align: right;
+ }
+
+ .menu li {
+    flex: 1;
+ }
+
+ .menu ul li a {
+    font-size: var(--nav-font-size);
+    font-weight: var(--font-weight-bold);
+ }

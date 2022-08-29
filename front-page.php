@@ -15,7 +15,6 @@
 
 get_header();
 ?>
-<h2>Front Page Template</h2>
 
 <?php get_template_part('template-parts/content', 'home'); ?>
 
