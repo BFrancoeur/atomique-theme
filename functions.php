@@ -189,3 +189,13 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Custom Atomique Code
+ */
+
+/**
+ * Implement Custom Fields
+ */
+// require get_template_directory() . '/inc/custom-fields.php';
+// require get_template_directory() . '/mu-plugins/hero-custom-post-type.php';

@@ -1,6 +1,9 @@
 <?php
 
-// create Homepage Hero meta box
+/**
+ * Homepage Hero Meta Box 
+ */
+
 
 
 // Meta Box Class: HomePageHeroContentMetaBox
@@ -10,13 +13,13 @@ class HomePageHeroContentMetaBox
 
     private $screen = array(
         'page',
-
+        'atomique_page',
     );
 
     private $meta_fields = array(
         array(
             'label' => 'Hero Background Image',
-            'id' => 'hero_bg_image',
+            'id' => 'hero_bg_img_url',
             'type' => 'media',
             'returnvalue' => 'url'
         ),
@@ -213,15 +216,3 @@ class HomePageHeroContentMetaBox
             if (class_exists('HomePageHeroContentMetabox')) {
                 new HomePageHeroContentMetabox;
             };
-
-                    ?>
-<section class="container hero" style="background-image: url( . <?php get_post_meta($post->ID, 'hero_bg_image'); ?> .)">
-    <div class="inner home-hero">
-        <div class="hero-content">
-            <h1 class="hero-msg"><?php get_post_meta($post->ID, 'hph_prim_cta_msg'); ?></h1>
-            <h3 class="supporting-cta-msg"><?php get_post_meta($post->ID, 'hph_second_cta_msg'); ?></h3>
-            <a href="<?php get_post_meta($post->ID, 'hph_prim_btn_link'); ?>" class="btn prim-cta-btn"><?php get_post_meta($post->ID, 'hph_prim_cta_btn_msg'); ?></a>
-            <a href="<?php get_post_meta($post->ID, 'hph_second_cta_btn_link'); ?>" class="btn second-cta-btn"><?php get_post_meta($post->ID, 'hph_second_cta_msg'); ?></a>
-        </div>
-    </div>
-</section><!-- .container.hero -->
